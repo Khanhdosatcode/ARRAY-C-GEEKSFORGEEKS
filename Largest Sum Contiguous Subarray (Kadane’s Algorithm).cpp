@@ -25,6 +25,20 @@
 //Constraints:
 //1 = N = 106
 //-107 = A[i] = 107
+
+
+/* HUONG TU DUY	
+*****Su dung 2 bien la max_ending_here va max_so_far
+max_ending_here cộng với từng giá trị của a[i].
+max_so_far : để lưu lại giá trị lớn nhất sau các lần cộng của a[i]
+****** start ,end 2 biến để in ra vị trí bắt đầu của chuỗi liên tiếp có tổng dài nhất 
+start bắt đầu tại vị trí sau khi vị trí trước có  max_ending_here =0;
+end đi với max_so_far sau mỗi lần cập nhật giá trị mới
+Sau mỗi lần cập thì so sánh vói (>max_so_far ) if lớn hơn thì max_sofar được update giá trị của max_ending_there.
+giá max_ending_here<0 thì max_ending _here =0 <reset lại chuỗi>
+
+
+*/
 #include<bits/stdc++.h>
 using namespace std;
 class Solution{
